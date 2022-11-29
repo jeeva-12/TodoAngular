@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class TodoAddComponent {
 
+  userId=""
+  id=""
+  title=""
+  completed=""
+
+  add=()=>
+  {
+    let data:any=
+    {
+      "userId":this.userId,
+      "id":this.id,
+      "title":this.title,
+      "completed":this.completed
+    }
+
+    console.log(data)
+  }
+
 }
